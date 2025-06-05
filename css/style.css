@@ -1,0 +1,153 @@
+:root {
+  --main-color: #060436;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(23, 23, 199);
+}
+
+.w-fc {
+  width: fit-content !important;
+}
+
+.mt-6 {
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+.scheherazade-new-regular {
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scheherazade-new-medium {
+  font-family: "Scheherazade New", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.scheherazade-new-semibold {
+  font-family: "Scheherazade New", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.scheherazade-new-bold {
+  font-family: "Scheherazade New", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Start Nav Bar*/
+.NavSearch {
+  gap: 10px;
+}
+
+nav li.nav-item {
+  position: relative;
+}
+
+nav li.nav-item::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+}
+
+nav li.nav-item:hover::before {
+  display: block;
+  opacity: 1;
+}
+/*End Nav Bar*/
+
+/*Start Latest News*/
+.latest-news .text span {
+  font-size: 14px;
+}
+.focus {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.focus a {
+  color: white;
+}
+
+.latest-news .left-side row {
+  gap: 10px;
+}
+
+/*End Latest News*/
+
+/*Start Featured News*/
+/*Start Most Viewed*/
+.center-text-height {
+  display: flex;
+  align-items: center;
+}
+.text-light-gray {
+  color: #ddd;
+}
+.main-title-container {
+  border-bottom: 2px solid #ccc;
+}
+.main-title {
+  width: fit-content;
+  height: 100%;
+  border-bottom: 4px solid var(--main-color);
+}
+.customize-anchor {
+  text-decoration: none;
+  color: var(--main-color);
+}
+/*End Most Viewed*/
+/*End Featured News*/
+
+/*Start Footer*/
+footer {
+  background-color: var(--main-color);
+}
+/*End Footer*/
+
+/*Start Detailed News*/
+.mt-7 {
+  margin-top: 9rem !important;
+}
+.mt-6 {
+  margin-top: 5rem !important;
+}
+@media (width >= 992px) {
+  .mt-lg-7 {
+    margin-top: 9rem !important;
+  }
+}
+.detailed-news .text > p {
+  margin-bottom: 30px;
+}
+/*End Detailed-News*/
